@@ -1,0 +1,24 @@
+.signup2
+{
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+input{
+    width: 260px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button1{
+    padding: 10px 20px;
+    border: 0px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    
+
+}

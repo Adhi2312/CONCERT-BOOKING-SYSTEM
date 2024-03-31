@@ -1,0 +1,283 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.Nav{
+  position: fixed;
+  display: flex;
+  margin-top:0px ;
+  background-color:#14213d;
+  font-family: Satoshi;
+  color: white;
+  width: 100%;
+  height: 70px;
+  padding: 0px 10px;
+
+}
+.Details{
+  display: flex;
+  
+  padding: 80px 20px 20px 20px;
+  
+}
+.desc{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  border-radius: 20px;
+  width: 25%;
+  /* height: auto; */
+  margin: 20px 40px 40px 40px;
+  border: 0.5px solid rgb(220, 220, 220);
+  padding: 30px 10px;
+  
+  max-height: 600px;
+  box-shadow: 1px 1px rgb(195, 195, 195);
+  
+}
+.tickets{
+  display: flex;
+ flex-wrap: wrap; 
+
+  padding: 30px 20px;
+
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  margin: 0px 40px 40px 40px;
+  overflow-y:auto;
+  scroll-snap-type: y mandatory; 
+  scrollbar-width:none;
+
+}
+.desc2{
+  padding: 20px;
+  color:black;
+  margin-top: 20px;
+  width: 70%;
+  
+  background-color: aliceblue;
+}
+ .ticket{
+  border: 0.5px solid rgb(220, 220, 220);
+  padding: 10px 15px;
+  box-shadow: 1px 1px rgb(195, 195, 195);
+  
+  height: 300px;
+  padding-bottom: 40px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 50px;
+  margin-bottom: 50px;
+  flex: 0 0 auto; /*Ensure consistent width for each event*/
+  scroll-snap-align: start;
+}
+.myticket{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  
+  
+  
+  padding: 80px 20px 20px 20px;
+
+}
+.mySingleTicket{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px 10px 10px;
+  width: 300px;
+  height: 150px;
+  background-image: url("data:image/jpeg;base64,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");
+ background-size: cover;
+  background-color: aqua;
+}
+.Home{
+  display: flex;
+  padding: 80px 20px 20px 20px;
+  /* width: 0px;
+  height: 0px; */
+
+}
+.sub{
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-left: 50px;
+  /* position:relative; */
+  margin-top: 30px;
+margin-right: 0px;
+  max-height: 450px;
+  border-radius: 35px;
+  width: 25%;
+  /* height: 200px; */
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(220, 220, 220);
+  padding: 10px 15px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px rgb(195, 195, 195);
+}
+.tag{
+  margin: 10px 10px 10px 20px;
+  height: 30px;
+  padding: 10px 20px 25px 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: 0px;
+  
+
+
+}
+.singleEvent{
+  /* border: 0.5px solid rgb(220, 220, 220);
+  /* padding: 10px 15px; */
+  /* box-shadow: 1px 1px rgb(195, 195, 195); */
+   
+  height: 250px;
+  /* padding-bottom: 40px; */
+  width: 250px;
+  background-color: rgb(122, 121, 121);
+  margin-right: 50px;
+  margin-bottom: 50px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+
+}
+.main{
+  max-width:65%;
+  margin-left: 0px;
+  
+  background-color: rgb(255, 255, 255);
+  padding:10px;
+}
+.chumma{
+  display: flex;
+  flex: row;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  
+  width: 100%;
+  height: 650px;
+  overflow-y:auto;
+  scroll-snap-type: y mandatory; 
+  scrollbar-width:none; 
+}
+.Nav>h3{
+  text-align: center;
+}
+.username-cont{
+margin-top: 400px;
+}
+
+.home2{
+  display: flex;
+  padding: 80px 20px 20px 20px;
+  width: 0px;
+  height: 0px;
+  
+}
+.signup{
+  display: flex;
+  
+  padding: 80px 20px 20px 20px;
+  justify-content: center;
+
+}
+.container{
+  border: 1px solid grey;
+  padding: 20px 20px;
+  
+  
+  min-width: 750px;
+}
+.input-c{
+  
+  width: 400px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-radius: 0px;
+}
+
+label{
+  width: 30%;
+}
+.input-d{
+  width: 70%;
+}
+
+
+
+/* Style when hovering over the custom button */
+.button-c{
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: medium;
+  border: 0px;
+  border-radius: 50px;
+  color: white;
+  background-color:#14213d; 
+ 
+}
+.purchase
+{
+  margin-top: 200px;
+  width: 400px;
+  
+  background-color:white;
+  position: fixed;
+  font-family: Satoshi;
+  box-shadow: 1px 1px 5px gray ;
+  
+  
+}
+.purchase1
+{
+  margin-top: 200px;
+  width: 400px;
+  
+  background-color:white;
+  position: fixed;
+  font-family: Satoshi;
+  box-shadow: 1px 1px 5px gray ;
+  visibility: hidden;
+  
+  
+}
