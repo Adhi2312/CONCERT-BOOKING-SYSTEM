@@ -40,9 +40,9 @@ const [count,setCount]=useState(1)
       location:data2.location
     })
     
-    console.log("Platinum booked");
+    
     setCard(false)
-    // useEffect(()=>{fe(),{}})
+    
   
   }
     catch(err){console.log(err)}
