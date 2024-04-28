@@ -17,7 +17,7 @@ function App() {
   const [authName,setAuthName] = useState("")
   const [username, setUsername] = useState(""); 
   const [password, setPassword] = useState("");
-  // const [data, setData] = useState("");
+  
   console.log("singer:"+event)
   
 
